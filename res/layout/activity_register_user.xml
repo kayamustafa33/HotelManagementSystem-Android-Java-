@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/nature"
+    android:gravity="center"
+    tools:context=".UI.RegisterUserActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hotel Management System"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/companyNameText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Company Name"
+        android:paddingStart="12dp"
+        android:drawablePadding="8dp"
+        android:textColorHint="@color/white"
+        android:drawableStart="@drawable/ic_baseline_factory_24"
+        android:background="@drawable/register_customer_bg"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/userEmailText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="E-mail"
+        android:textColorHint="@color/white"
+        android:paddingStart="12dp"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:background="@drawable/register_customer_bg"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/userPasswordText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/white"
+        android:hint="Password"
+        android:layout_marginBottom="15dp"
+        android:paddingStart="12dp"
+        android:textColorHint="@color/white"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:background="@drawable/register_customer_bg"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/confirmPasswordText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/white"
+        android:hint="Confirm Password"
+        android:paddingStart="12dp"
+        android:drawablePadding="8dp"
+        android:textColorHint="@color/white"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:background="@drawable/register_customer_bg"
+        android:inputType="textPassword"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="signUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/login_bg"
+        android:backgroundTint="#FFA726"/>
+
+    <TextView
+        android:onClick="goToLoginPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you already have an account?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

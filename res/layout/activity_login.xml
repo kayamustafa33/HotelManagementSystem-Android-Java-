@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="@drawable/random"
+    tools:context=".UI.LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hotel Management System"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"/>
+
+
+    <EditText
+        android:id="@+id/userEmailText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/login_bg"
+        android:paddingStart="12dp"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="8dp"
+        android:textColorHint="@color/white"
+        android:layout_marginStart="20dp"
+        android:hint="E-mail Address"/>
+
+    <EditText
+        android:id="@+id/userPasswordText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:textColorHint="@color/white"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="8dp"
+        android:textColor="@color/white"
+        android:paddingStart="12dp"
+        android:inputType="textPassword"
+        android:background="@drawable/login_bg"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:hint="Password"/>
+
+    <TextView
+        android:onClick="forgotClicked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:gravity="end"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:text="Login"
+        android:onClick="loginClicked"
+        android:backgroundTint="#FDD835"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:background="@drawable/login_bg"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="100dp"/>
+
+    <TextView
+        android:onClick="goToRegisterPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Register."
+        android:textAlignment="center"
+        android:textColor="@color/white"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember Me"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"/>
+</LinearLayout>

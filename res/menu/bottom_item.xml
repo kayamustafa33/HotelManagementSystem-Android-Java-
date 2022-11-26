@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+
+    <item android:id="@+id/rooms"
+        android:icon="@drawable/room"
+        android:title="Rooms"/>
+
+    <item android:id="@+id/registerCustomer"
+        android:icon="@drawable/customer"
+        android:title="Register Customer"/>
+
+    <item android:id="@+id/allCustomers"
+        android:icon="@drawable/customer2"
+        android:title="All Customers"/>
+
+    <item android:id="@+id/rezervations"
+        android:icon="@drawable/date"
+        android:title="Rezervations"/>
+</menu>

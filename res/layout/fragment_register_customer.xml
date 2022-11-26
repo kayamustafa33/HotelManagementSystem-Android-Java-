@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Fragments.RegisterCustomerFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/customerNameText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/customer"
+                android:drawablePadding="8dp"
+                android:paddingStart="12dp"
+                android:background="@drawable/register_customer_bg"
+                android:hint="Customer Name"/>
+
+            <EditText
+                android:id="@+id/customerSurnameText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:layout_marginEnd="20dp"
+                android:drawableStart="@drawable/customer"
+                android:drawablePadding="8dp"
+                android:paddingStart="12dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/register_customer_bg"
+                android:hint="Customer Surname"/>
+
+            <EditText
+                android:id="@+id/customerIdentityNumberText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:background="@drawable/register_customer_bg"
+                android:layout_marginEnd="20dp"
+                android:drawableStart="@drawable/card"
+                android:drawablePadding="8dp"
+                android:paddingStart="12dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Customer Identity Number"/>
+
+            <EditText
+                android:id="@+id/customerPhoneNumberText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:background="@drawable/register_customer_bg"
+                android:layout_marginEnd="20dp"
+                android:drawableStart="@drawable/phone"
+                android:drawablePadding="8dp"
+                android:paddingStart="12dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Customer Phone Number"/>
+
+            <EditText
+                android:id="@+id/roomNumberText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/room"
+                android:drawablePadding="8dp"
+                android:paddingStart="12dp"
+                android:background="@drawable/register_customer_bg"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Room Number"/>
+
+            <EditText
+                android:id="@+id/entryDateText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/date"
+                android:drawablePadding="8dp"
+                android:paddingStart="12dp"
+                android:hint="Customer Entry Date"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/register_customer_bg"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/exitDateText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:hint="Customer Exit Date"
+                android:layout_margin="20dp"
+                android:drawableStart="@drawable/date"
+                android:drawablePadding="8dp"
+                android:paddingStart="12dp"
+                android:background="@drawable/register_customer_bg"
+                android:inputType="date" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/registerCustomerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register Customer"
+                android:textAllCaps="false"
+                android:layout_marginEnd="80dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/register_customer_bg"
+                android:backgroundTint="#66BB6A"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
